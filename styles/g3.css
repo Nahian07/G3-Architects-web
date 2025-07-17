@@ -41,7 +41,8 @@
 .navbar,
 .banner,
 .features-container,
-.facts
+.facts,
+.sponsor
 {
     max-width: 1440px;
     margin: 0 auto;
@@ -143,6 +144,11 @@
     color: #FF900E;
 }
 
+/* love & joy section styles */
+
+
+
+
 /* some facts section */
 
 .facts{
@@ -184,6 +190,32 @@
     font-weight: 600;
     font-size: 1.25rem;
     margin: 0;
+}
+
+/* sponsors section styles */
+
+.sponsor{
+    text-align: center;
+    padding-bottom: 130px;
+}
+
+.sponsor-title{
+    font-weight: 700;
+    font-size: 2.8rem;
+}
+
+.sponsor-description{
+    font-size: 1rem;
+}
+
+.sponsors-container{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 40px;
+}
+
+.sponsors-container > img{
+    filter: grayscale(100%);
 }
 
 /* responsive for small devices */
@@ -266,6 +298,20 @@
     border: 1px solid tomato;
     border-radius: 8px;
     padding: 40px;
+    }
+
+    /* sponsors */
+
+    .sponsors-container{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+        justify-self: center;
+    }
+
+    .sponsors-container > *:nth-last-child(1):nth-child(odd){
+        grid-column: 1 / -1;
+        justify-self: center;
     }
 
 }
