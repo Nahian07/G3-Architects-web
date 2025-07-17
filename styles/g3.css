@@ -40,7 +40,8 @@
 
 .navbar,
 .banner,
-.features-container
+.features-container,
+.facts
 {
     max-width: 1440px;
     margin: 0 auto;
@@ -144,6 +145,46 @@
 
 /* some facts section */
 
+.facts{
+    padding: 100px 0px;
+}
+
+.facts-title{
+    font-weight: 700;
+    font-size: 2.8rem;
+    margin: 0;
+}
+
+.facts-description{
+    font-size: 1rem;
+}
+
+.facts-container{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 125px;
+    padding: 40px;
+}
+
+.fact-content{
+    text-align: center;
+    border: 1px solid tomato;
+    border-radius: 8px;
+    padding: 45px 35px;
+}
+
+.fact-content > h3{
+    font-weight: 600;
+    font-size: 2.8rem;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.fact-content > h5{
+    font-weight: 600;
+    font-size: 1.25rem;
+    margin: 0;
+}
 
 /* responsive for small devices */
 
@@ -207,5 +248,24 @@
         font-size: 2rem;
     }
 
+    /* facts */
+
+    .facts-container{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 20px;
+    padding: 40px;
+    }
+
+    .facts{
+    padding: 50px 0px;
+    }
+
+    .fact-content{
+    text-align: center;
+    border: 1px solid tomato;
+    border-radius: 8px;
+    padding: 40px;
+    }
 
 }
